@@ -1,4 +1,9 @@
 
+# firebase setup
+
+[Nitro Firebase preset](https://nitro.unjs.io/deploy/providers/firebase.html)
+
+
 # Test 1 - dev server with curl
 
 `yarn dev`
