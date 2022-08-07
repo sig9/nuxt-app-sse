@@ -8,7 +8,7 @@ export default defineEventHandler(async (e) => {
         'Content-Type': 'text/event-stream',
     });
 
-    const sseId = crypto.randomUUID();
+    const sseId = crypto.randomUUID().toString();
 
     const sendEvent = (data: string) => {
         e.res.write(`id: ${sseId}\n`);
@@ -26,7 +26,7 @@ export default defineEventHandler(async (e) => {
         sendEvent(JSON.stringify(data));
         await sleep(1000);
     }
-
+    e.res.shouldKeepAlive
     sendEvent('[DONE]');
     e.res.end();
 });

@@ -2,16 +2,16 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "build:azure": "NITRO_PRESET=azure nuxt build",
-    "build:azure:win": "set NITRO_PRESET=azure&nuxt build",
+    "build:cloudflare": "NITRO_PRESET=cloudflare nuxt build",
+    "build:cloudflare:win": "set NITRO_PRESET=cloudflare&nuxt build",
+    "mf:preview": "miniflare .output/server/index.mjs --site .output/public",
     "dev": "nuxt dev",
-    "swa:build": "swa start .output/public --api-location .output/server",
     "generate": "nuxt generate",
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@azure/static-web-apps-cli": "^1.0.2",
-    "azure-functions-core-tools": "^4.0.4653",
-    "nuxt": "3.0.0-rc.6"
+    "nuxt": "3.0.0-rc.6",
+    "wrangler": "^2.0.24",
+    "miniflare": "^2.6.0"
   }
 }
