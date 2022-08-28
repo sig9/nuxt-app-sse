@@ -12,6 +12,7 @@
   "devDependencies": {
     "@azure/static-web-apps-cli": "^1.0.2",
     "azure-functions-core-tools": "^4.0.4653",
+    "firebase": "^9.9.3",
     "nuxt": "3.0.0-rc.6"
   }
 }
