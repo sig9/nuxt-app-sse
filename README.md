@@ -1,4 +1,4 @@
-
+git@github.com:sig9/nuxt3-firebase-auth.git 
 # Test 1 - dev server with curl
 
 `yarn dev`
